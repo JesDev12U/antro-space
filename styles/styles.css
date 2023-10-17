@@ -4,6 +4,10 @@
     font-size: 4vh;
 }
 
+html{
+    scroll-behavior: smooth; /*Para que no se hagan movimientos bruscos*/
+}
+
 body{
     background-color: black;
     padding: 15px;
@@ -13,7 +17,11 @@ body{
     text-align: center;
     font-size: 20vh;
     text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
-    letter-spacing: 5vh;
+    letter-spacing: 20vh;
+}
+
+.logo-marca{
+    cursor:pointer;
 }
 
 /*Estilos de la barra de navegacion*/
@@ -179,6 +187,10 @@ header .overlay .close{
     }
 } */
 
+.a-contacto{
+    display: none;
+}
+
 /*Para mobile*/
 .abrir-menu{
     display:none;
@@ -237,6 +249,9 @@ header .overlay .close{
         font-size: 30px;
     }
 
+    .a-contacto{
+        display: block;
+    }
 }
 
 /*Se activa al momento de hacer scroll, esto es del archivo nav.js*/

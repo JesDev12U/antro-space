@@ -8,6 +8,18 @@ function bloquearScroll(event) {
     event.stopPropagation();
 }
   
+// Agregar evento de clic a cada elemento del menú
+const elementosMenu = document.querySelectorAll(".nav-links a");
+
+elementosMenu.forEach(elemento => {
+    elemento.addEventListener("click", () => {
+        nav.classList.remove("visible");
+        window.removeEventListener('wheel', bloquearScroll);
+        window.removeEventListener('touchmove', bloquearScroll);
+    });
+});
+
+
 function abrirMenuTransicion(){
     const windowHeight = window.innerHeight;
     const posicionY = window.scrollY; // Posición vertical
@@ -25,9 +37,6 @@ function abrirMenuTransicion(){
             behavior: "smooth"
         });
     }
-    
-  
-  
 }
 
 abrir.addEventListener("touchstart", ()=>{
@@ -46,7 +55,7 @@ abrir.addEventListener("click", ()=>{
 cerrar.addEventListener("touchstart", ()=>{
     nav.classList.remove("visible");
     // Eliminar los listeners para el evento 'touchmove' (deslizar en pantallas táctiles)
-  window.removeEventListener('touchmove', bloquearScroll);
+    window.removeEventListener('touchmove', bloquearScroll);
 })
 
 cerrar.addEventListener("click", ()=>{

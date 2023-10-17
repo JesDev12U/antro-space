@@ -24,28 +24,31 @@
 
 </head>
 <body>
+   <span id="inicio"></span>
     <header>
          <div class="logo">
-            <img src="img/logoPng.png" alt="Logo de la marca">
+            <a href="#inicio"><img src="img/logoPng.png" alt="Logo de la marca" class="logo-marca"></a>
          </div>
-        <!--<h1 class="titulo">SPACE</h1>-->
+        
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
         <nav id="nav">
             <button class="btn-cerrar" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-links">
-               <li><a href="#">Inicio</a></li>
-               <li><a href="#">Acerca de</a></li>
-               <li><a href="#">Servicios</a></li>
-               <li><a href="#">Contacto</a></li>
+               <li><a href="#inicio">Inicio</a></li>
+               <li><a href="#acerca-de">Acerca de</a></li>
+               <li><a href="#servicios">Servicios</a></li>
+               <li><a href="#contacto" class="a-contacto">Contacto</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn"><button>Contacto</button></a>
+        <a href="#contacto" class="btn"><button>Contacto</button></a>
     </header>
-    <script src="js/nav.js"></script>
+    <!-- <script src="js/nav.js"></script> -->
     <div class="scrol">
     </div>
     <script type="text/javascript" src="js/nav.js"></script>
     <main>
+      <!--<h1 class="titulo">SPACE</h1>-->
+      
             <!--Sheet Slider-->
             <div class="sheetSlider sh-default sh-auto">
                <input id="s1" type="radio" name="slide1" checked=""> 
@@ -175,7 +178,7 @@
                <!--Control-->
                <button class="sh-control"></button>  
             </div><!-- .sheetSlider -->
-        <section>
+        <section id="acerca-de">
             <h2>Acerca de Nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quasi id, corrupti sequi laborum odio hic earum qui consequatur! Dolorum dolor omnis aliquid quam illo cum. Impedit cupiditate hic iusto?
             Saepe tempore veritatis dolor inventore numquam? Velit repudiandae repellendus quae ipsa tempora fugit nemo blanditiis itaque! Possimus obcaecati, ab quae suscipit labore atque accusamus aut. Deleniti consectetur labore necessitatibus. Voluptatum?
@@ -188,7 +191,7 @@
             Dignissimos, voluptate! Illum iste mollitia porro perferendis? Est atque quidem a expedita, quia pariatur aspernatur recusandae adipisci perspiciatis nulla eligendi ratione, maxime at esse velit, magnam quis rem vero odit.
             Expedita doloremque, quis in dolores doloribus impedit adipisci voluptatum, ab aperiam consequuntur placeat modi. Quidem ducimus ipsam laboriosam fugit perspiciatis sit, deserunt dicta dignissimos vitae asperiores voluptas animi natus magni.</p>
         </section>
-        <section>
+        <section id="servicios">
             <h2>Nuestros Servicios</h2>
             <ul>
                 <li>Servicio 1</li>
@@ -216,7 +219,7 @@
                 <li>Servicio X</li>
             </ul>
         </section>
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolor. Perferendis sequi minima tempore excepturi voluptatibus. Facere dolorum nemo provident animi odit? Labore error minus quasi, laborum eaque ratione unde!
             Beatae aut nobis aspernatur at necessitatibus veritatis, excepturi quis temporibus ipsum! Odit dolor ut voluptas, placeat nam ipsa, blanditiis facere reiciendis earum, ad dignissimos officiis? Numquam saepe quia nihil eligendi!
