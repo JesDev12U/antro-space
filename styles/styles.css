@@ -1,0 +1,388 @@
+* {
+    font-family: Space, 'Caveat', cursive;
+    color: white;
+    font-size: 4vh;
+}
+
+body{
+    background-color: black;
+    padding: 15px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 20vh;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    letter-spacing: 5vh;
+}
+
+/*Estilos de la barra de navegacion*/
+/**{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+header{
+    background-color: black;
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    position: fixed; /*Para que este siempre visible en pantalla*/
+    width: 75%;
+}
+
+header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    max-width: 5rem;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .nav-links{
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li{
+    
+    padding: 0 20px;
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
+
+header .nav-links li a:hover,
+.overlay a:hover{
+    color: red;
+}
+
+header .btn button,
+.abrir-menu, header nav .btn-cerrar{
+    margin-left: 20px;
+    font-weight: 700;
+    color: rgb(192, 190, 190);
+    padding: 9px 25px;
+    background: rgb(182, 1, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header .btn button:hover,
+.abrir-menu:hover,
+header nav .btn-cerrar:hover{
+    background-color: red;
+    box-shadow: 0 0 5px rgb(149, 3, 3), 0 0 15px rgb(149, 3, 3),
+    0 0 30px rgb(149, 3, 3), 0 0 50px rgb(149, 3, 3);
+    color: white;
+    transform: scale(1.1);
+}
+
+/*Nav responsive*/
+
+@media screen and (max-width:850px){
+    header{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:800px){
+   
+    .nav-links{
+        display: inline-block;
+    } 
+
+    header{
+        width: 70%;
+    }
+} 
+
+
+
+header a{
+    text-decoration: none;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+    color: white;
+}
+
+/* header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: all 0.1s ease 0s;
+}
+
+header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: white;
+}
+
+header .overlay a:hover,
+header .overlay a:focus{
+    color: red;
+}
+
+header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+    header .overlay a{
+        font-size: 20px;
+    }
+
+    header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+} */
+
+/*Para mobile*/
+.abrir-menu{
+    display:none;
+}
+
+.btn-cerrar{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .abrir-menu,
+    .btn-cerrar{
+        display:block;
+    }
+
+    .nav-links, .btn{
+        display: none;
+    }
+
+
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2em;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.9);
+    }
+
+    nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-links a{
+        font-size: 20px;
+    }
+
+}
+
+/*Se activa al momento de hacer scroll, esto es del archivo nav.js*/
+.nav.active{
+    background-color: black;
+    padding: 15px;
+}
+
+/*Para que haya un espacio entre el nav y el carrusel*/
+.scrol{
+    height: 150px;
+}
+
+
+/*nav{
+    width: 1250px;
+    height: 90px;
+    background-color: #000000;
+    margin: 0 auto;
+    border: 2px solid #232323;
+    box-shadow: 0px 22px 22px red, 0 0 5px red, 0 0 15px red;
+    margin-bottom: 145px;
+    /*padding-bottom: 30px*/
+    
+/*}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    line-height: 30px;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding-left: 90px;
+    padding-right: 90px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-shadow: 0 0 5px rgb(40, 105, 197), 0 0 15px rgb(40, 105, 197), 
+    0 0 30px rgb(40, 105, 197), 0 0 50px rgb(40, 105, 197);
+}
+
+nav ul li a:hover{
+    background-color: #575757;
+    box-shadow: 0px 0px 5px #333333 inset;
+    transition: all 300ms;
+}
+
+/*Estilos de los h2*/
+section h2{
+    font-size: 10vh;
+    text-shadow: 0 0 5px rgb(95, 34, 208), 0 0 15px rgb(95, 34, 208), 
+    0 0 30px rgb(95, 34, 208), 0 0 50px rgb(95, 34, 208);
+}
+
+/*h2 responsive y letras en general*/
+@media screen and (max-width:800px){
+    section h2{
+        font-size: 6vh;
+    }
+
+    section p,
+    section ul li {
+        font-size: 3vh;
+    }
+}
+
+/*Estilos del footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0px 22px 22px red, 0 0 5px red, 0 0 15px red;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: red;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.pie-pagina .grupo-2 small b{
+    font-size: 15px;
+}
+
+/*Responsive del footer*/
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo-1 .box figure a img{
+        width: 70%;
+    }
+}
