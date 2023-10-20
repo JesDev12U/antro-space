@@ -379,6 +379,7 @@ iframe {
     grid-template-rows: repeat(2, 1fr); /* 3 filas de igual tamaño */
     gap: 20px; /* Espacio entre elementos del grid */
     height:200px;
+    
 }
 
 .icono-contacto-ubicacion{
@@ -444,6 +445,15 @@ iframe {
     }
     .espacio-mapa-footer{
         height:40px;
+    }
+    .info-contacto-container{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:372px){
+    .info-contacto-container{
+        margin-bottom: 80px;
     }
 }
 
