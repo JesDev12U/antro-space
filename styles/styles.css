@@ -451,9 +451,9 @@ iframe {
     }
 }
 
-@media screen and (max-width:372px){
+@media screen and (max-width:390px){
     .info-contacto-container{
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 }
 
