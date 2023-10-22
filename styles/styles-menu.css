@@ -197,3 +197,48 @@ main{
         grid-row:5;
     }
 }
+
+.nav-bebidas ul{
+    padding:0px;
+    margin:0px;
+    
+}
+
+.nav-bebidas ul li, .nav-bebidas{
+    list-style-type: none;
+}
+
+.nav-bebidas a{
+    font-family: 'Tilt Neon', sans-serif;
+    font-size:0.7rem;
+    text-decoration: none;
+    border-style:solid;
+    padding:5px 10px;
+    display:block;
+    margin-left:20px;
+}
+
+.nav-bebidas a:hover{
+    border-color:red;
+    background-color:#1f1f1f;
+}
+
+#header-bebidas{
+    margin:auto;
+    width:600px;
+}
+
+.nav-bebidas > li{
+    float:left;
+}
+
+.nav-bebidas li ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+
+.nav-bebidas li:hover > ul{
+    display:block;
+}
