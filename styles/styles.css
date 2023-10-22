@@ -216,6 +216,13 @@ header .overlay .close{
     display: none;
 }
 
+@media screen and (max-width: 445px){
+    .nombre-antro{
+        font-size:0.55em;
+        letter-spacing: 0;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .abrir-menu,
     .btn-cerrar{
