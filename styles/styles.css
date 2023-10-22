@@ -347,7 +347,8 @@ aside ul li a i:hover{
     aside{
         position:fixed;
         grid-row:5;
-        top:550px;
+        /* top:550px; */
+        bottom: 10px;
         width:85%;
         height:10%;
     }
@@ -651,5 +652,15 @@ iframe {
 
     .pie-pagina .grupo-1 .box figure a img{
         width: 70%;
+    }
+}
+
+.espacio-aside-footer{
+    display:none;
+}
+
+@media screen and (max-width:800px){
+    footer{
+        margin-bottom: 100px;
     }
 }
