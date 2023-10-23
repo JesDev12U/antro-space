@@ -254,4 +254,13 @@ main{
     .lista-bebidas-container ul{
         grid-template-columns: 1fr;
     }
+
+    .container-bebidas-alcoholicas li a,
+    .container-bebidas-no-alcoholicas li a{
+        font-size:0.7em;
+    }
+
+    .encabezado-bebida{
+        font-size:1em;
+    }
 }
