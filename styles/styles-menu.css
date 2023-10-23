@@ -10,7 +10,7 @@ main{
 }
 
 
-.container-comida{
+.container-elemento{
     width:100%;
     max-width: 1200px;
     display:grid;
@@ -21,9 +21,9 @@ main{
 
 }
 
-.container-comida .card{
+.container-elemento .card{
     width:330px;
-    height:530px;
+    height:600px;
     border-radius: 8px;
     margin:20px;
     text-align: center;
@@ -33,167 +33,171 @@ main{
     background-color: rgb(20, 20, 20);
 }
 
-.container-comida .card:hover{
+.container-elemento .card:hover{
     transform: translateY(-15px);
 }
 
-.container-comida .card img{
+.container-elemento .card img{
     width: 330px;
     height:220px;
 }
 
-.container-comida .card h4{
+.container-elemento .card h4{
     font-weight: 600;
 }
 
-.container-comida .card p{
+.container-elemento .card .precio-elemento{
+    color:rgb(1, 181, 1);
+}
+
+.container-elemento .card p{
     padding: 0 1rem;
     font-size:16px;
     font-weight:300;
 }
 
-.container-comida .card #card1{
+.container-elemento .card #card1{
     grid-column: 1;
 }
 
-.container-comida .card #card2{
+.container-elemento .card #card2{
     grid-column: 2;
 }
 
-.container-comida .card #card3{
+.container-elemento .card #card3{
     grid-column:3;
 }
 
-.container-comida .card #card4{
+.container-elemento .card #card4{
     grid-column:1;
     grid-row:2;
 }
 
-.container-comida .card #card5{
+.container-elemento .card #card5{
     grid-column:2;
     grid-row:2;
 }
 
 @media screen and (max-width:1250px){
-    .container-comida{
+    .container-elemento{
         grid-template-columns: 1fr 1fr;
     }
 
-    .container-comida .card #card1{
+    .container-elemento .card #card1{
         grid-column: 1;
     }
     
-    .container-comida .card #card2{
+    .container-elemento .card #card2{
         grid-column: 2;
     }
     
-    .container-comida .card #card3{
+    .container-elemento .card #card3{
         grid-column:1;
         grid-row:2;
     }
     
-    .container-comida .card #card4{
+    .container-elemento .card #card4{
         grid-column:2;
         grid-row:2;
     }
     
-    .container-comida .card #card5{
+    .container-elemento .card #card5{
         grid-column:1;
         grid-row:3;
     }
 }
 
 @media screen and (max-width:900px){
-    .container-comida{
+    .container-elemento{
         width:80%;
     }
 
-    .container-comida .card img{
+    .container-elemento .card img{
         width:100%;
     }
 
-    .container-comida .card{
+    .container-elemento .card{
         width:300px;
     }
 
-    .container-comida .card p{
+    .container-elemento .card p{
         font-size:0.4rem;
     }
 }
 
 @media screen and (max-width:770px){
-    .container-comida{
+    .container-elemento{
         width:80%;
     }
 
-    .container-comida .card img{
+    .container-elemento .card img{
         width:100%;
     }
 
-    .container-comida .card{
+    .container-elemento .card{
         width:200px;
     }
 }
 
 @media screen and (max-width:600px){
-    .container-comida{
+    .container-elemento{
         width:80%;
     }
 
-    .container-comida .card img{
+    .container-elemento .card img{
         width:100%;
     }
 
-    .container-comida .card{
+    .container-elemento .card{
         width:170px;
     }
 
-    .container-comida .card p{
+    .container-elemento .card p{
         font-size:0.35rem;
     }
 }
 
 @media screen and (max-width:500px){
-    .container-comida{
+    .container-elemento{
         width:100%;
         grid-template-columns: 1fr;
     }
 
-    .container-comida .card img{
+    .container-elemento .card img{
         width:330px;
         height:230px;
     }
 
-    .container-comida .card{
+    .container-elemento .card{
         width:330px;
         height:530;
     }
 
-    .container-comida .card p{
+    .container-elemento .card p{
         font-size:16px;
     }
 
-    .container-comida .card #card1{
+    .container-elemento .card #card1{
         grid-column:1;
         grid-row:1;
     }
 
-    .container-comida .card #card2{
+    .container-elemento .card #card2{
         grid-column:1;
         grid-row:2;
     }
 
-    .container-comida .card #card3{
+    .container-elemento .card #card3{
         grid-column:1;
         grid-row:3;
     }
 
-    .container-comida .card #card4{
+    .container-elemento .card #card4{
         grid-column:1;
         grid-row:4;
     }
 
-    .container-comida .card #card5{
+    .container-elemento .card #card5{
         grid-column:1;
         grid-row:5;
     }
