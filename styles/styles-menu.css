@@ -9,6 +9,7 @@ main{
     }
 }
 
+
 .container-comida{
     width:100%;
     max-width: 1200px;
@@ -195,5 +196,62 @@ main{
     .container-comida .card #card5{
         grid-column:1;
         grid-row:5;
+    }
+}
+
+.lista-bebidas-container ul{
+    /* padding:0;
+    margin:0; */
+    
+    display:grid;
+    grid-template-columns: 40% 50%;
+}
+
+
+.lista-bebidas-container ul li{
+    list-style-type: none;
+
+
+}
+
+.lista-bebidas-container ul li a{
+    text-decoration:none;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.container-bebidas-alcoholicas li a,
+.container-bebidas-no-alcoholicas li a{
+    text-shadow: 0 0 5px red, 0 0 15px red;
+    font-size:0.7em;
+}
+
+.container-bebidas-alcoholicas li a:hover,
+.container-bebidas-no-alcoholicas li a:hover{
+    color:red;
+}
+
+.encabezado-bebida{
+    font-size:1em;
+    text-shadow: 0 0 5px rgb(0, 193, 193), 0 0 15px rgb(0, 193, 193);
+}
+
+.encabezado-bebida:hover{
+    color:rgb(0, 193, 193);
+}
+
+@media screen and (max-width:900px){
+    .container-bebidas-alcoholicas li a,
+    .container-bebidas-no-alcoholicas li a{
+        font-size:0.5em;
+    }
+
+    .encabezado-bebida{
+        font-size:0.8em;
+    }
+}
+
+@media screen and (max-width:700px){
+    .lista-bebidas-container ul{
+        grid-template-columns: 1fr;
     }
 }
