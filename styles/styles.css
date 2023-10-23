@@ -11,6 +11,8 @@ h1, h2, a, button, .nombre-antro{
     font-family: Space, 'Caveat', cursive;
 }
 
+
+
 html{
     scroll-behavior: smooth; /*Para que no se hagan movimientos bruscos*/
 }

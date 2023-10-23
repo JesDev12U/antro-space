@@ -9,6 +9,22 @@ main{
     }
 }
 
+.title-tiposbebidas{
+    text-shadow: 0 0 5px rgb(255, 77, 107), 0 0 15px rgb(255, 77, 107), 
+    0 0 30px rgb(255, 77, 107);
+    font-size:40px;
+    font-family: Space, 'Caveat', cursive;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.title-bebidas{
+    text-shadow:0 0 5px blue, 0 0 15px blue, 0 0 30px blue;
+    font-family: Space, 'Caveat', cursive;
+    font-size:40px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
 
 .container-elemento{
     width:100%;
@@ -78,6 +94,13 @@ main{
     grid-row:2;
 }
 
+.container-elemento .card #card6{
+    grid-column:3;
+    grid-row:2;
+}
+
+
+
 @media screen and (max-width:1250px){
     .container-elemento{
         grid-template-columns: 1fr 1fr;
@@ -103,6 +126,11 @@ main{
     
     .container-elemento .card #card5{
         grid-column:1;
+        grid-row:3;
+    }
+
+    .container-elemento .card #card6{
+        grid-column:2;
         grid-row:3;
     }
 }
@@ -200,6 +228,11 @@ main{
     .container-elemento .card #card5{
         grid-column:1;
         grid-row:5;
+    }
+
+    .container-elemento .card #card6{
+        grid-column: 1;
+        grid-row:6;
     }
 }
 
