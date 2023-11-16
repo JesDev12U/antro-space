@@ -10,6 +10,15 @@ main {
     }
 }
 
+html {
+    zoom: 100%;
+    /* Para navegadores que no sean IE */
+    zoom: 1;
+    /* Para IE 6-11 */
+    -ms-zoom: 1;
+}
+
+
 .title-tiposbebidas {
     text-shadow: 0 0 5px rgb(255, 77, 107), 0 0 15px rgb(255, 77, 107),
         0 0 30px rgb(255, 77, 107);
