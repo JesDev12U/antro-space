@@ -213,6 +213,17 @@ header nav .btn-cerrar:hover {
     }
 }
 
+@media screen and (max-width:450px){
+    header a .logo-marca-letras{
+        width:140%;
+    }
+}
+
+@media screen and (max-width:440px){
+    header{
+        width: 83%;
+    }
+}
 
 /* header a{
     text-decoration: none;
@@ -411,7 +422,8 @@ aside ul li a i:hover {
         /* top:550px; */
         bottom: 10px;
         width: 92%;
-        height: 10%;
+        max-height: 9%;
+
     }
 
     aside ul {
@@ -450,7 +462,7 @@ aside ul li a i:hover {
     }
 
     aside ul li {
-        font-size: 3vw; /* Cambia esto a un valor relativo al tamaño de la pantalla */
+        font-size: 2vw; /* Cambia esto a un valor relativo al tamaño de la pantalla */
     }
 
     aside ul li a i {
@@ -466,7 +478,14 @@ aside ul li a i:hover {
 
 @media screen and (max-width:470px) {
     aside {
-        height: auto;
+        width:90%;
+        height: 8%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    aside {
+        height: 7%;
     }
 }
 
