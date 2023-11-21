@@ -7,6 +7,10 @@
     font-size: 4vh;
 }
 
+html{
+    margin-top:0;
+}
+
 /* Estilos del scrollbar en el body */
 body {
     /* Estilos del scrollbar */
