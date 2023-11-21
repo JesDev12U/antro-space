@@ -113,6 +113,7 @@ header .logo img {
     height: 100px;
     width: auto;
     transition: all 0.3s;
+    max-width:auto;
 }
 
 /* header .logo img:hover{
@@ -199,6 +200,10 @@ header nav .btn-cerrar:hover {
 
     header {
         width: 90%;
+    }
+
+    header a .logo-marca-letras{
+        width:150%;
     }
 }
 
@@ -434,6 +439,31 @@ aside ul li a i:hover {
     }
 }
 
+@media screen and (max-width:600px){
+    
+    aside ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap; /* Añade esto para permitir que los elementos de la lista se envuelvan si no caben en una sola línea */
+    }
+
+    aside ul li {
+        font-size: 3vw; /* Cambia esto a un valor relativo al tamaño de la pantalla */
+    }
+
+    aside ul li a i {
+        font-size: 7vw; /* Cambia esto a un valor relativo al tamaño de la pantalla */
+    }
+
+    aside ul li {
+        margin-left: 9vw; /* Cambia esto a un valor relativo al tamaño de la pantalla */
+        margin-top: 1vh; /* Cambia esto a un valor relativo al tamaño de la pantalla */
+    }
+
+}
+
 @media screen and (max-width:470px) {
     aside {
         height: auto;
@@ -456,6 +486,13 @@ main {
 
 .logoMain img {
     width: 25%;
+}
+
+@media screen and (max-width:1100px){
+    .logoMain img {
+        width: 50%;
+    }
+
 }
 
 /*nav{
