@@ -14,8 +14,9 @@ body {
     /* Activar el scroll vertical */
     scrollbar-width: thin;
     /* Grosor del scrollbar (solo en algunos navegadores) */
-    scrollbar-color: #9e01a1 #323232;
+    scrollbar-color: #520053 #323232;
     /* Color del scrollbar (solo en algunos navegadores) */
+    margin-top:0;
 }
 
 /* Estilos específicos del scrollbar de Webkit (Chrome, Safari, etc.) */
@@ -33,7 +34,7 @@ body::-webkit-scrollbar-track {
 
 /* Estilo del scrollbar (thumb) */
 body::-webkit-scrollbar-thumb {
-    background-color: #9e01a1;
+    background-color: #520053;
     /* Color del thumb (la parte que se mueve) */
     border-radius: 5px;
     /* Borde redondeado */
@@ -56,7 +57,7 @@ html {
 
 body {
     background-color: black;
-    padding: 15px;
+    /*padding: 15px;*/
     display: grid;
     grid-template-columns: 10% 90%;
     gap: 20px;
@@ -86,7 +87,7 @@ header {
     border-color: #FA00FF;
     box-shadow: 0 0 10px #FA00FF, 0 0 20px #FA00FF;
     border-width: 5px;
-    margin-bottom: 40px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,9 +96,12 @@ header {
     padding: 10px;
     position: fixed;
     /*Para que este siempre visible en pantalla*/
-    width: 95%;
     z-index: 1000;
+    width:97%;
     /*Para que el header sea el elemento que esté enfrente de todos*/
+    margin-right:10px;
+    margin-top:1px;
+    margin-bottom: 40px;
 }
 
 header .logo {
@@ -361,7 +365,7 @@ aside {
     position: fixed;
     width: 8%;
     z-index: 1000;
-    margin-top: 130px;
+    margin-top: 140px;
     height: 78%;
     background-color: rgb(20, 20, 20);
     /*padding-right:20px;*/
@@ -371,7 +375,6 @@ aside {
     border-width: 5px;
     display: flex;
     text-align: center;
-
 }
 
 aside ul li {
