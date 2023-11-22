@@ -118,7 +118,7 @@ header .logo {
 
 header .logo img {
     margin-top: 10px;
-    height: 100px;
+    height: 90px;
     width: auto;
     transition: all 0.3s;
     max-width:auto;
@@ -211,7 +211,7 @@ header nav .btn-cerrar:hover {
     }
 
     header a .logo-marca-letras{
-        width:150%;
+        width:170%;
     }
 }
 
@@ -223,13 +223,13 @@ header nav .btn-cerrar:hover {
 
 @media screen and (max-width:450px){
     header a .logo-marca-letras{
-        width:140%;
+        min-width:100px;
     }
 }
 
 @media screen and (max-width:440px){
     header{
-        width: 83%;
+        width: 89%;
     }
 }
 
@@ -404,7 +404,7 @@ aside ul li a i:hover {
     color: rgb(249, 160, 246);
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
     aside ul li {
         font-size: 0.6em;
     }

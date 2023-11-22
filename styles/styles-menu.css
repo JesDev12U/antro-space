@@ -30,10 +30,9 @@ html {
 
 .title-bebidas {
     text-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 30px blue;
-    font-family: Space, 'Caveat', cursive;
-    font-size: 40px;
-    letter-spacing: 20px;
-    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+
 }
 
 .container-elemento {
@@ -202,12 +201,12 @@ html {
     }
 
     .container-elemento .card img {
-        width: 330px;
+        width: 280px;
         height: 230px;
     }
 
     .container-elemento .card {
-        width: 330px;
+        width: 280px;
         height: 530;
     }
 
