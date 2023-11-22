@@ -124,6 +124,11 @@ header .logo img {
     max-width:auto;
 }
 
+header .logo .logo-marca-letras{
+    width:140%;
+    height:70%;
+}
+
 /* header .logo img:hover{
     transform: scale(1.1);
 } */
