@@ -20,12 +20,9 @@ html {
 
 
 .title-tiposbebidas {
-    text-shadow: 0 0 5px rgb(255, 77, 107), 0 0 15px rgb(255, 77, 107),
-        0 0 30px rgb(255, 77, 107);
+    text-shadow: 0 0 5px #FA00FF, 0 0 15px #FA00FF;
     font-size: 40px;
     font-family: Space, 'Caveat', cursive;
-    letter-spacing: 10px;
-    text-transform: uppercase;
 }
 
 .title-bebidas {
